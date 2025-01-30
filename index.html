@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google Font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
     <!-- Font Awesome Font  -->
     <script src="https://kit.fontawesome.com/8d06cf118e.js" crossorigin="anonymous"></script>
     <!-- DaisyUI CDN -->
@@ -14,15 +16,81 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Pet Care</title>
     <style>
-        .sora{
+        .sora {
             font-family: "Sora", serif;
         }
-        .adlm{
+
+        .adlm {
             font-family: "ADLaM Display", serif;
+        }
+
+        .text-color {
+            color: rgb(17, 17, 17);
         }
     </style>
 </head>
+
 <body class="sora">
-    <h1 class="adlm">Hello</h1>
+    <header class="w-full bg-[rgb(255,255,255)]">
+        <div class="header-container w-11/12 mx-auto">
+            <div class="navbar">
+                <div class="navbar bg-[rgb(255,249,244)]">
+                    <div class="navbar-start">
+                        <div class="dropdown">
+                            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </div>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                                <li><a>Find a pet</a></li>
+                                <li><a>Breeds</a></li>
+                                <li><a>Contact us</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo">
+                            <img src="./c1-assets/logo-header.png" alt="">
+                        </div>
+                        <a class=" font-semibold ml-2">Browse <strong class="text-yellow-500 ">4</strong> Pets</a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1">
+                            <li><a>Find a pet</a></li>
+                            <li><a>Breeds</a></li>
+                            <li><a>Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-end hidden lg:flex gap-4">
+                        <i class="fa-regular fa-bell text-xl"></i>
+                        <i class="fa-solid fa-magnifying-glass text-xl"></i>
+                        <a class="btn bg-[rgb(255,249,244)] border-2 border-yellow-500">Login</a>
+                        <a class="btn bg-[rgb(255,220,38)]">Register</a>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Banner Section -->
+            <section class=" py-3 md:py-20 bg-[url('./c1-assets/cat-big.png')] bg-no-repeat  bg-center mb-6">
+                <div class="banner-container md:py-[100px] space-y-4">
+                    <h1 class="text-xl md:text-6xl md:leading-[73px] font-medium animate-pulse">Pamper Your Pet, <br> Because They Deserve <br> the
+                        Bes</h1>
+                    <br>
+                    <p class="text-color md:leading-6 md:text-xl">Discover a world of treats, toys, and essentials handpicked for <br>
+                        your furry friends. Shop now and make tails wag with joy!</p>
+                    <br>
+                    <a class="btn bg-[rgb(255,220,38)]">Find a pet</a>
+                </div>
+
+            </section>
+        </div>
+    </header>
+
+
+    <main></main>
+    <footer></footer>
 </body>
+
 </html>
