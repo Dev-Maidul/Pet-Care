@@ -32,9 +32,32 @@
 
 <body class="sora">
     <header class="w-full bg-[rgb(255,255,255)]">
-        <div class="header-container w-11/12 mx-auto">
-            <div class="navbar">
-                <div class="navbar bg-[rgb(255,249,244)]">
+        <div class="header-container w-full md:w-11/12 mx-auto">
+            <!-- Mobile Menu start -->
+            <div class="mobile flex justify-between md:hidden bg-[rgb(255,249,244)] py-5 border border-b-1 border-black px-4">
+                        
+                <div class="logo">
+                    <img src="./c1-assets/logo-header.png" alt="">
+                </div>
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+                        <li><a>Find a pet</a></li>
+                        <li><a>Breeds</a></li>
+                        <li><a>Contact us</a></li>
+                    </ul>
+                </div>
+             </div>
+            <!-- Mobile Menu end -->
+            <div class="navbar hidden md:block">
+                <div class="navbar bg-[rgb(255,249,244)]">   
                     <div class="navbar-start">
                         <div class="dropdown">
                             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -45,7 +68,7 @@
                                 </svg>
                             </div>
                             <ul tabindex="0"
-                                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
                                 <li><a>Find a pet</a></li>
                                 <li><a>Breeds</a></li>
                                 <li><a>Contact us</a></li>
@@ -54,7 +77,7 @@
                         <div class="logo">
                             <img src="./c1-assets/logo-header.png" alt="">
                         </div>
-                        <a class=" font-semibold ml-2">Browse <strong class="text-yellow-500 ">4</strong> Pets</a>
+                        <a class="hidden md:block lg:block font-semibold ml-2 ">Browse <strong class="text-yellow-500 ">4</strong> Pets</a>
                     </div>
                     <div class="navbar-center hidden lg:flex">
                         <ul class="menu menu-horizontal px-1">
